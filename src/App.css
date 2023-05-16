@@ -33,7 +33,7 @@
     font-size: 2rem;
     line-height: 116%;
 }
-.principal-content-main button {
+.principal-content-main a {
     background: linear-gradient(to right, #0f0c29,#302b63, #24243e);
     border: 0;
     margin-top: 1rem;
@@ -46,7 +46,7 @@
     box-shadow: 0.2rem 0.2rem 0.3rem   var(--deepNavyBlue) ;
     transition: all .1s linear;
 }
-.principal-content-main button:hover {
+.principal-content-main a:hover {
     opacity: 0.8;
     box-shadow: none;
 }
@@ -262,4 +262,11 @@
 #card-horizontal .card-info h3 {
     text-align: start;
     margin-left: 5%;
+}
+
+footer {
+    padding: 1rem;
+}
+footer p {
+    text-align: start;
 }

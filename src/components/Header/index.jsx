@@ -54,20 +54,23 @@ export function Header() {
 
             </button>
 
-                <nav style={{animation: `${nav ? 'openNav' : 'closeNav'} 500ms ease-in  forwards alternate-reverse`,}}>
+                <nav style={{animation: `${nav ? 'openNav' : 'closeNav'} 500ms ease-in  forwards alternate-reverse`}}>
                     <ul>
-                   
                         <li>
-                            Apresentação
+                        <a href="#info">
+                        Apresentação
+                            </a>
                         </li>
+                        <li >
+                        <a href="#card">
+                        Cartões
+
+                        </a>
+                    </li>
                         <li>
-                            Cartões
-                        </li>
-                        <li>
-                            Sobre
-                        </li>
-                        <li>
-                            Comentários
+                        <a href="#about">
+                        Sobre
+                            </a>
                         </li>
                         </ul>
                 </nav>

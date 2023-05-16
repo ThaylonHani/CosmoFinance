@@ -19,16 +19,16 @@ function App() {
           <label htmlFor="">
             <div></div>
           </label>
-          <button>
+          <a href="#card" >
             Conhecer
-          </button>
+          </a>
         </section>
 
       </div>
       
 
       <main>
-        <div className="main-info">
+        <div className="main-info" id="info">
           <section>
           <h3>
             Por que nos contratar ?
@@ -115,6 +115,14 @@ function App() {
           </h3>
         </div>
       </main>
+      <footer>
+        <h2>
+        Sobre nós
+        </h2>
+        <p>
+          Nós somos uma empresa bancária atrás de novos colaboradores, buscamos respeito e sinceridade entre nós e nossos colaboradores sempre indo atrás de novas tecnologias. 
+        </p>
+      </footer>
     </div>
   );
 }
