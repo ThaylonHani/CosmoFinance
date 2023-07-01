@@ -1,128 +1,85 @@
-import { Header } from "./components/Header";
+import "./App.css";
 
-import { FcSimCardChip } from "react-icons/fc";
+import { BsStarFill,BsStarHalf } from "react-icons/bs";
 
-import "./App.css"
 
 function App() {
   return (
     <div className="App">
-      
-      <Header />
+      <header>
+        <h1>Bank</h1>
 
-      <div className="principal-content">
+        <ul>
+          <li>About</li>
+          <li>Features</li>
+          <li>Support</li>
+        </ul>
 
-        <section className="principal-content-main">
-          <h3>
-          Cartão Cosmos Black, o melhor para você atravessar galáxias.
-          </h3>
-          <label htmlFor="">
-            <div></div>
-          </label>
-          <a href="#card" >
-            Conhecer
-          </a>
-        </section>
-
-      </div>
-      
+        <p>
+          Need help? <a href="#">Contact Us</a>
+        </p>
+      </header>
 
       <main>
-        <div className="main-info" id="info">
+        <div className="main-principal">
           <section>
-          <h3>
-            Por que nos contratar ?
-          </h3>
-          <p>
-            Além de facilidade entregamos segurança e qualidade a todos nossos consumidores, com acesso bancário 24h por dia, pelo aplicativo do cartão.
+            <h2 className="text-main">SIMPLE.</h2>
+            <h2 className="text-main">MONEY.</h2>
+            <h2 className="text-main">CARD.</h2>
+            <ul className="main-ul">
+              <li>Security</li>
+              <li>Convenience</li>
+              <li>Transactions</li>
+            </ul>
+          </section>
+          <img
+            src="/credit-card.png"
+            alt="Cartão de crédito"
+            className="credit-card"
+          />
+        </div>
+
+        <section id="business">
+          <div className="message-information">
+            <div className="messages">
+              <h3>
+                38M+
+              </h3>
+              <p>Businesses have already joined us!</p>
+            </div>
+            <div className="messages" >
+            <h3>
+                0%
+              </h3>
+              <p>Zero percent fee to any transaction</p>
+            </div>
+            <div id="message-star">
+              <img src="/avatar.png" alt="" width="64px" />
+              <section>
+              <p className="stars">
+                <BsStarFill/>
+                <BsStarFill/>
+                <BsStarFill/>
+                <BsStarFill />
+                <BsStarHalf/>
+              </p>
+                <p className="stars">
+                So many people like this service
+              </p>
+              </section>
+            </div>
+          </div>
+        </section>
+
+        <section className="topics">
+          <h3 className="topics-name">About</h3>
+          <p className="topics-description">
+            <strong>Our mission is to provide</strong> you with the information
+            and tools you need to make informed financial decisions and achieve
+            your financial goals.
           </p>
-          </section>
-          <section>
-            <h3>
-              Nossos cartões
-            </h3>
-            <p>
-              Nossos cartões são modernos e com um toque especial de segurança, podendo ver sua conta bancária a qualquer momento sem dor de cabeça.
-            </p>
-          </section>
-          <section>
-            <h3>
-              Nos contrate
-            </h3>
-            <p>
-              Estamos com promoções especiais para nossos fiéis assinantes, não perca e se junte ao time 
-            </p>
-          </section>
-        </div>
-
-        <div className="main-card">
-
-          <section id="card">
-            <div className="card-name">
-            <h2>
-              CosmosBlack
-              </h2>
-              <FcSimCardChip style={{fontSize: "2rem"}}/>
-           </div>
-            <div className="card-info">
-            
-              <h3>
-                  Pedro cohen
-              </h3>
-              <h4>
-              XXXX XXXX XXXX XXXX
-              </h4>
-            </div>
-              <div id="cosmo"/>
-          </section>
-
-          <ul>
-            <li>
-              Segurança
-            </li>
-            <li>
-              Acessibilidade 
-            </li>
-            <li>
-              Rápido
-            </li>
-              </ul>
-        </div>
-
-        <div className="main-card-horizontal">
-
-          <section id="card-horizontal">
-            <div className="card-name">
-            <h2>
-              CosmosBlack
-              </h2>
-              <FcSimCardChip style={{fontSize: "2rem", marginLeft: "10%"}}/>
-           </div>
-            <div className="card-info">
-            
-              <h4>
-              XXXX XXXX XXXX XXXX
-              </h4>
-              <h3>
-                  Pedro cohen
-              </h3>
-            </div>
-              <div id="cosmo"/>
-          </section>
-
-          <h3>
-            2 modelos para cada tipo de gosto
-          </h3>
-        </div>
+        </section>
       </main>
-      <footer>
-        <h2>
-        Sobre nós
-        </h2>
-        <p>
-          Nós somos uma empresa bancária atrás de novos colaboradores, buscamos respeito e sinceridade entre nós e nossos colaboradores sempre indo atrás de novas tecnologias. 
-        </p>
-      </footer>
     </div>
   );
 }
